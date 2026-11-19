@@ -10,7 +10,6 @@ import Foundation
 public class ZIPArchiveOpener: CompositeArchiveOpener {
     public init() {
         super.init([
-            MinizipArchiveOpener(),
             ZIPFoundationArchiveOpener(),
         ])
     }
